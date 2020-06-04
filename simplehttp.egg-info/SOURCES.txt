@@ -1,0 +1,8 @@
+MANIFEST.in
+README
+setup.cfg
+setup.py
+simplehttp.egg-info/PKG-INFO
+simplehttp.egg-info/SOURCES.txt
+simplehttp.egg-info/dependency_links.txt
+simplehttp.egg-info/top_level.txt
