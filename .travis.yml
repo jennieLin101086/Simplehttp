@@ -1,2 +1,54 @@
-# .travis.yml
+# # .travis.yml
 language: python
+python:   #自動測試運行環境為哪一個
+- 2.6
+- 2.7
+- 3.3
+- 3.4
+- 3.6
+- pypy
+
+
+install:       # 安裝依賴
+    # pip install -r requirements.txt
+    pip install wheel
+    pip install twine
+    python setup.py install
+    # - pip install -e .
+    - pip install coverage
+    - pip install coveralls
+     # Print the environment.
+    - which python
+    - which pip
+    - which py.test
+    - py.test --version
+    - pip freeze
+
+script: 
+    # - coverage run --source=slumber setup.py test
+    python -m unittest -v --source=. tests/testAll.py  # 如果有單元測試這裡應該執行單元測試
+    coverage run -m unittest discover --source=. tests/testAll.py
+    #  
+
+
+after_success:
+  coveralls
+  coverage report
+  coverage combine
+
+deploy:
+provider: pypi
+user: user
+distributions: "sdist bdist bdist_wheel"
+password:
+    secure: secure_pẁ
+on:
+    tags: false
+    branch: dev
+# os: windows
+#   language: sh
+#   python: "3.8"
+#   before_install:
+#         - choco install python3
+#         - export PATH="/c/Python38:/c/Python38/Scripts:$PATH"
+#         - python -m pip install --upgrade pip wheel
