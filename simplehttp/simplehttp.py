@@ -44,10 +44,15 @@ def parse(url,params):
 def get_json(url, params):
     if '?' not in url:
         return response
+    elif 'get' not in url:
+        raise ValueError
     else:
         return parse(url,params)
     
 def post_json(url, params, data):
+    global response
+    response = {'args':{}}
+    
     if params != None:
         split_params(params=params)
     if len(data) > 0:
