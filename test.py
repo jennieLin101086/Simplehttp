@@ -45,14 +45,14 @@ class TestSimpleHttp(unittest.TestCase):
         self.assertTrue( json.loads(r['json']) == data)
 
 
-class TestException(unittest.TestCase):   
+# class TestException(unittest.TestCase):   
 
-    def test_assert_raises(self):                    
-        with self.assertRaises(ValueError):
-            get_json('https://httpbin.org/status/400',None)
+#     def test_assert_raises(self):                    
+#         with self.assertRaises(ValueError):
+#             get_json('https://httpbin.org/status/400',None)
             # sys.last_value.status_code = 400
             # self.assertTrue(sys.last_value.status_code == 400) 
-
+        
 
 
 if __name__ == '__main__':
