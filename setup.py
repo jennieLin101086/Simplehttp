@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r") as readme_file:
+with open("README.rst", "r") as readme_file:
     readme = readme_file.read()
 
 
@@ -12,7 +12,8 @@ setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     py_modules=["simplehttp"],
-    package=find_packages()
+    package=find_packages(),
+    # install_requires=open('requirements.txt').readlines()
 
     # List run-time dependencies here.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's

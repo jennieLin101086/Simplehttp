@@ -11,18 +11,18 @@ python:   #自動測試運行環境為哪一個
 
 install:       # 安裝依賴
     # pip install -r requirements.txt
-    pip install wheel
-    pip install twine
-    python setup.py install
+    # pip install wheel
+    # pip install twine
+    # python setup.py install
     # - pip install -e .
-    - pip install coverage
-    - pip install coveralls
+    pip install coverage
+    pip install coveralls
      # Print the environment.
-    - which python
-    - which pip
+    # - which python
+    # - which pip
 
    
-    - pip freeze
+    # - pip freeze
 
 script: 
     # - coverage run --source=slumber setup.py test
@@ -38,9 +38,9 @@ after_success:
   coverage combine
 
 # deploy:
-# provider: pypi
-# user: user
-# distributions: "sdist bdist bdist_wheel"
+#     provider: pypi
+#     user: jennie
+#     distributions: "sdist bdist_wheel"
 # password:
 #     secure: secure_pẁ
 # on:
