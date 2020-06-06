@@ -33,7 +33,7 @@ after_success:
 deploy:
     provider: pypi
     user: jennie
-    distributions: python3 setup.py sdist bdist_wheel 
+    distributions: sdist bdist_wheel 
         # "sdist bdist_wheel" 
     password: Lj4dzLwqsAHJ36r
 # on:
