@@ -1,6 +1,6 @@
 # # .travis.yml
 language: python
-dist: xenial
+
 
 install:       # 安裝依賴
     # pip install -r requirements.txt
@@ -23,6 +23,8 @@ script:
     #coverage run -m unittest discover --source=. tests/testAll.py
     #
     python test.py
+    python3 setup.py bdist_wheel
+
 
 
 after_success:
@@ -31,11 +33,12 @@ after_success:
   coverage combine
 
 deploy:
+    skip_existing: true
     provider: pypi
     user: jennie
-    password: Lj4dzLwqsAHJ36r
-    distributions: "sdist bdist_wheel" 
-
+    password: Lj4dzLwqsAHJ36r  
+    distributions: sdist bdist_wheel
+        
 # "sdist bdist_wheel" 
 # on:
 #     tags: false
