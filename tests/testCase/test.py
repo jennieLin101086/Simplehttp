@@ -6,7 +6,7 @@ print(BASE_DIR)
 sys.path.append(BASE_DIR)
 
 import unittest
-from simplehttp import get_json,post_json
+from ...simplehttp import get_json,post_json
 import json
 
 
