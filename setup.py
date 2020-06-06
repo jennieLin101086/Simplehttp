@@ -6,7 +6,7 @@ with open("README.rst", "r") as readme_file:
 
 
 setup(
-    name = 'simplerequest',
+    name = 'simplerequest-jennie',
     version='0.0.1',
     license='MIT',
     long_description=readme,
