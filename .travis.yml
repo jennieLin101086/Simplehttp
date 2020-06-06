@@ -30,12 +30,11 @@ after_success:
   coverage report
   coverage combine
 
-# deploy:
-#     provider: pypi
-#     user: jennie
-#     distributions: "sdist bdist_wheel"
-# password:
-#     secure: secure_pẁ
+deploy:
+    provider: pypi
+    user: jennieLin
+    distributions: "sdist bdist_wheel"
+    password: sS71641303
 # on:
 #     tags: false
 #     branch: dev
