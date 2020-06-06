@@ -23,7 +23,7 @@ script:
     #coverage run -m unittest discover --source=. tests/testAll.py
     #
     python test.py
-    python3 setup.py bdist_wheel
+    python setup.py bdist_wheel
 
 
 
