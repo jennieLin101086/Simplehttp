@@ -48,7 +48,7 @@ class TestSimpleHttp(unittest.TestCase):
 class TestException(unittest.TestCase):   
 
     def test_assert_raises(self):                    
-        with self.assertRaises(ValueError) as v:
+        with self.assertRaises(ValueError):
             get_json('https://httpbin.org/status/400',None)
             # sys.last_value.status_code = 400
             # self.assertTrue(sys.last_value.status_code == 400) 
