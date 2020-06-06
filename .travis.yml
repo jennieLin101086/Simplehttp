@@ -38,7 +38,7 @@ deploy:
     user: jennie
     password: Lj4dzLwqsAHJ36r  
     distributions: sdist bdist_wheel
-        
+    skip_cleanup: true
 # "sdist bdist_wheel" 
 # on:
 #     tags: false
