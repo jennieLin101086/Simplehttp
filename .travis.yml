@@ -31,7 +31,7 @@ after_success:
   coverage combine
 
 deploy:
-    provider: pypi
+    provider: testpypi
     user: jennieLin
     distributions: "sdist bdist_wheel"
     password: sS71641303
