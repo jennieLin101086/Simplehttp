@@ -6,11 +6,11 @@ with open("README.rst", "r") as readme_file:
 
 
 setup(
-    name = 'jennie-simplerequest',
+    name = 'simplerequest',
     version='0.0.1',
     license='MIT',
     long_description=readme,
-    package=find_packages(),
+    package=find_packages()
     # install_requires=open('requirements.txt').readlines()
 
     # List run-time dependencies here.  These will be installed by pip when
