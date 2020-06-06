@@ -11,6 +11,7 @@ setup(
     license='MIT',
     long_description=readme,
     package=find_packages(),
+    include_package_data=True,
     # install_requires=open('requirements.txt').readlines()
 
     # List run-time dependencies here.  These will be installed by pip when

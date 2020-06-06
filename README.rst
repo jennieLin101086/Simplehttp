@@ -1,2 +1,2 @@
-[![Build Status](https://travis-ci.org/hadesshark/jenkins_test_python.svg?branch=master)](https://travis-ci.org/hadesshark/jenkins_test_python)
+[![Build Status](https://api.travis-ci.com/jennieLin101086/Simplehttp.svg?token=ZsqCX7LF1LsREJ1Lejba&branch=master&status=passed)
 [![Coverage Status](https://coveralls.io/repos/github/hadesshark/jenkins_test_python/badge.svg?branch=master)](https://coveralls.io/github/hadesshark/jenkins_test_python?branch=master)
