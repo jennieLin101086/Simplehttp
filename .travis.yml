@@ -9,7 +9,7 @@ install:       # 安裝依賴
     # python setup.py install
     # - pip install -e .
     pip install coverage
-    pip install coveralls
+    # pip install coveralls
      # Print the environment.
     # - which python
     # - which pip
