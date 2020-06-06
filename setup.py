@@ -6,12 +6,10 @@ with open("README.rst", "r") as readme_file:
 
 
 setup(
-    name = 'simplehttp',
+    name = 'jennie-simplerequest',
     version='0.0.1',
     license='MIT',
     long_description=readme,
-    long_description_content_type="text/markdown",
-    py_modules=["simplehttp"],
     package=find_packages(),
     # install_requires=open('requirements.txt').readlines()
 
