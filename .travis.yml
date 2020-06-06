@@ -1,12 +1,5 @@
 # # .travis.yml
 language: python
-python:   #自動測試運行環境為哪一個
-- 2.6
-- 2.7
-- 3.3
-- 3.4
-- 3.6
-- pypy
 
 
 install:       # 安裝依賴
