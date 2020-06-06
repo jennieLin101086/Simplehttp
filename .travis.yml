@@ -31,10 +31,10 @@ after_success:
   coverage combine
 
 deploy:
-    provider: Testpypi
-    user: jennieLin
+    provider: pypi
+    user: jennie
     distributions: "sdist bdist_wheel"
-    password: sS71641303
+    password: Lj4dzLwqsAHJ36r
 # on:
 #     tags: false
 #     branch: dev
