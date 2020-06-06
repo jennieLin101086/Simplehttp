@@ -22,7 +22,7 @@ script:
     #python -m unittest -v --source=. tests/testAll.py  # 如果有單元測試這裡應該執行單元測試
     #coverage run -m unittest discover --source=. tests/testAll.py
     #
-    python  tests/test.py
+    python  tests/testCase/test.py
 
 
 after_success:
