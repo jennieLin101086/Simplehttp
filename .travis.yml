@@ -14,7 +14,7 @@ install:       # 安裝依賴
     # - which python
     # - which pip
 
-    python3 -m pip install --user --upgrade setuptools wheel
+    # python3 -m pip install --user --upgrade setuptools wheel
     # - pip freeze
 
 script: 
@@ -33,9 +33,10 @@ after_success:
 deploy:
     provider: pypi
     user: jennie
-    distributions: sdist bdist_wheel 
-        # "sdist bdist_wheel" 
+    distributions: "sdist bdist_wheel" 
     password: Lj4dzLwqsAHJ36r
+
+# "sdist bdist_wheel" 
 # on:
 #     tags: false
 #     branch: dev
